@@ -1,0 +1,27 @@
+.app{
+    height:100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        // Snap scoll type
+        scroll-snap-type: y mandatory ;
+
+        // Hide scroll bar for firefox
+        scrollbar-width: none;
+        //  Hides for other browsers
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        // scrollbar
+        >*{
+            width:100vw;
+            height: calc(100vh - 70px);
+            // aligns scroll snap w/each section
+            scroll-snap-align: star;
+        }
+    }
+}
