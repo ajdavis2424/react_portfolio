@@ -7,6 +7,7 @@ import Intro from "./Components/Intro/Intro"
 import Testimonials from "./Components/Testimonials/Testimonials"
 import "./app.scss"
 import { useState } from 'react';
+import Menu from "./Components/Menu/Menu";
 
 // Componets are passed through here in App.js--- importing state above
 function App() {
@@ -14,6 +15,8 @@ function App() {
   return (
       <main className= "app">
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        
         <div className="sections"> 
           <Intro />
           <Portfolio />

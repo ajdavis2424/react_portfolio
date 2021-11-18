@@ -8,7 +8,8 @@
     // position stays no matter what
     position : fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+    transition: all 1s ease;
 
     .wrapper{
         // top and bottom 10 L&R 30 px
