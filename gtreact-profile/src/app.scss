@@ -7,13 +7,14 @@
         background-color: lightsalmon;
         position: relative;
         top: 70px;
+        scroll-behavior: smooth;
         // Snap scoll type
         scroll-snap-type: y mandatory ;
 
         // Hide scroll bar for firefox
         scrollbar-width: none;
         //  Hides for other browsers
-        ::-webkit-scrollbar{
+        &::-webkit-scrollbar{
             display: none;
         }
         // scrollbar

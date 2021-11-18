@@ -6,12 +6,14 @@ import Works from "./Components/Works/Works"
 import Intro from "./Components/Intro/Intro"
 import Testimonials from "./Components/Testimonials/Testimonials"
 import "./app.scss"
+import { useState } from 'react';
 
-// Componets are passed through here in App.js
+// Componets are passed through here in App.js--- importing state above
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
       <main className= "app">
-        <Header />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div className="sections"> 
           <Intro />
           <Portfolio />
