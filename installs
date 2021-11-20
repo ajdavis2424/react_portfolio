@@ -1,3 +1,4 @@
 npx create-react-app 
 npm i sass ---- scss filles for styling
 npm install @material-ui/icons --- for icons
+npm i ityped  ---- for animationa
