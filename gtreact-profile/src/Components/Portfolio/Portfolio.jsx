@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../PortfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
-    featuredPortfolio, designPortfolio, contentPortfolio, } from "../../data"
+    featuredPortfolio, designPortfolio, contentPortfolio, webPortfolio, mobilePortfolio } from "../../data.js"
 
 function Portfolio() {
     // whenever something from array is selected it will be active class
         const [selected, setSelected] = useState("featured");
+        const [data,setData] = useState([]);
     const list =[
         {
             id: "featured",
@@ -29,6 +30,26 @@ function Portfolio() {
         title: "Content",
         },
     ];
+
+        // to choose selected and selct data
+    useEffect(() => {
+
+        switch(selected){
+            case "featured" :setData(featuredPortfolio);
+            break;
+            case "design" :setData(designPortfolio);
+            break;
+            case "content" :setData(contentPortfolio);
+            break;
+            case "mobile" :setData(mobilePortfolio);
+            break;
+            case "web" :setData(webPortfolio);
+            break;
+            default: setData(featuredPortfolio);
+        }
+    },[selected])
+
+
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
@@ -50,33 +71,15 @@ function Portfolio() {
                 <li>Branding</li> */}
             </ul>
             <div className="container">
+                {data.map((d) => (
                 <div className="item">
-                    <img src="gtreact-profile/public/assets/images/Weather App Image.png" alt="" />
-                    <h3>Weather App</h3>
+                    <img src={d.img}alt="" />
+                    <h3>{d.title}</h3>
                 </div>
-                <div className="item">
-                    <img src="gtreact-profile/public/assets/images/Weather App Image.png" alt="" />
-                    <h3>Weather App</h3>
-                </div>
-                <div className="item">
-                    <img src="gtreact-profile/public/assets/images/Weather App Image.png" alt="" />
-                    <h3>Weather App</h3>
-                </div>
-                <div className="item">
-                    <img src="gtreact-profile/public/assets/images/Weather App Image.png" alt="" />
-                    <h3>Weather App</h3>
-                </div>
-                <div className="item">
-                    <img src="gtreact-profile/public/assets/images/Weather App Image.png" alt="" />
-                    <h3>Weather App</h3>
-                </div>
-                <div className="item">
-                    <img src="gtreact-profile/public/assets/images/Weather App Image.png" alt="" />
-                    <h3>Weather App</h3>
-                </div>
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Portfolio

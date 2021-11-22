@@ -45,6 +45,32 @@ export const designPortfolio = [
     }
 ];
 
+export const mobilePortfolio =[
+    {
+        id: 1,
+        title: "Mobile App",
+        img:""
+    },
+    {
+        id: 2,
+        title: "Mobile App 2",
+        img:""
+    },
+];
+
+export const webPortfolio =[
+    {
+        id: 1,
+        title: "Web Portfolio 1",
+        img:""
+    },
+    {
+        id: 2,
+        title: "Demo for Password GeneratorWeb Portfolio 2",
+        img:""
+    },
+]
+
 export const contentPortfolio =[
     {
         id: 1,
