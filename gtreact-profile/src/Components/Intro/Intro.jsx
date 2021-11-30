@@ -22,7 +22,7 @@ init(textRef.current, {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="gtreact-profile/public/assets/IMG_1380.jpeg" alt=""/>
+                    <img src="./assets/images/IMG_1313.jpeg" alt=""/>
                 </div>
             </div>
             <div className="right">
