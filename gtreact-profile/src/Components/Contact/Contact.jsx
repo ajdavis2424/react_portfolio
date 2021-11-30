@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="" alt="" />
+      <img src="./assets/images/IMG_1313.jpeg" alt=""/>
       </div>
       <div className="right">
         <h2>Contact.</h2>

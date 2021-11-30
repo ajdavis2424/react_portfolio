@@ -9,8 +9,9 @@ function Header({menuOpen, setMenuOpen }) {
             <div className="wrapper">
             <div className="left">
                 {/* anchor */}
-                <a href="#intro" className="logo">LOGO</a>
+                <a href="#intro" className="logo"><img src="./assests/images/1174949_js_react js_logo_react_react native_icon.png" alt="" /></a>
                 <div className="itemContainer">
+                
                     {/* Person & Mail come from materialze icon install */}
                     <Person className="icon"/>
                     <span> 813-465-8252</span>
