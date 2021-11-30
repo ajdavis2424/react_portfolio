@@ -32,7 +32,7 @@ init(textRef.current, {
                     <h3> Emerging <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
-                down arrow here
+                <img src="./assets/images/white-arrow-png-41944.png" alt="" />
                 </a>
             </div>
         </div>
