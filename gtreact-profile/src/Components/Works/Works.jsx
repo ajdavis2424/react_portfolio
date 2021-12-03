@@ -8,23 +8,23 @@ function Works() {
     const data =[
         {
         id: "1",
-        icon: "./assets/image",
-        title: "Branding",
-        desc: "lorem Ipsum blah blah blah",
-        img:"asstes/images/Functioning Website.jpeg",
+        // icon: "./assets/images/GoodMorning-Cup.jpeg",
+        title: "Front End",
+        desc: "Projects will show my ability to build on the front end of projects using a variety of languages",
+        img:"./assets/images/codepic.jpeg",
     },
     {
         id: "2",
-        icon: "./assets/image",
-        title: "Branding",
-        desc: "lorem Ipsum blah blah blah",
+        // icon: "./assets/image",
+        title: "Back-End",
+        desc: "Projects will show my ability to build back-end database via SQL & NOSQL languagess",
         img:"",
     },
     {
         id: "3",
-        icon: "./assets/image",
-        title: "Branding",
-        desc: "lorem Ipsum blah blah blah",
+        // icon: "./assets/image",
+        title: "Security",
+        desc: "Password Generator creates a unique password for users most private information",
         img:"",
     },
     ];
@@ -40,6 +40,7 @@ function Works() {
                 <div className="container">
                     <div className="item">
                         <div className="left">
+                            
                             {/* icon title, and button */}
                             <div className="leftContainer">
                                 <div className="imgContainer">
@@ -54,7 +55,7 @@ function Works() {
                         </div>
                         
                         <div className="right">
-                            <img src="assets/images/Strong-Password-Generator.jpeg" alt="" />
+                            <img src="./assets/images/codepic.jpeg" alt="" />
                         </div>
                         
                     </div>

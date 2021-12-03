@@ -17,9 +17,9 @@
             float: right;
 
             img{
-                height:90%;
-                // MUST ADJSUT IMAGE
-                left: -30px;
+                height:133%;
+                // MUST ADJSUT
+                left: -20px;
             }
         }
     }
@@ -70,7 +70,7 @@
             }
             @keyframes arrowBlink{
                 100%{
-                    opacity: 0;
+                    opacity: 3;
                 }
             }
         }

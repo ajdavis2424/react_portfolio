@@ -3,17 +3,17 @@ export const featuredPortfolio = [
     {
         id: 1,
     title: "GoodMorning App",
-    img:""
+    // img:"./assets/images/GoodMorning-Cup.jpeg"
     },
     {
         id: 2,
     title: "Weather Dashboard App",
-    img:""
+    // img:"./assets/images/Weather App Image.png"
     },
     {
         id: 3,
     title: "Password Generator",
-    img:""
+    // img:"./assets/images/Strong-Password-Generator.jpeg"
     },
     {
         id: 4,
