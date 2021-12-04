@@ -1,4 +1,4 @@
-import "./portfolioList.scss"
+import "./portfolioList.scss";
 
 export default function PortfolioList({ id,title, active, setSelected }) {
     return (
@@ -9,5 +9,5 @@ export default function PortfolioList({ id,title, active, setSelected }) {
         </li>
             
        
-    )
+    );
 }

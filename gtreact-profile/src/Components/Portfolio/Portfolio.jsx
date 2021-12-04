@@ -73,7 +73,17 @@ function Portfolio() {
             <div className="container">
                 {data.map((d) => (
                 <div className="item">
-                    <img src={d.img}alt="" />
+                    <img src={d.img}alt="" /> 
+                    {/* <img src="./assets/images/GoodMorning-Cup.jpeg" alt=""  /> */}
+                    <h3>{d.title}</h3>
+                </div>
+                ))}
+            </div>
+            <div className="container">
+                {data.map((d) => (
+                <div className="item">
+                    <img src={d.img}alt="" /> 
+                    {/* <img src="./assets/images/Weather App Image.png" alt=""  /> */}
                     <h3>{d.title}</h3>
                 </div>
                 ))}
