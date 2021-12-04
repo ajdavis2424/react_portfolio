@@ -3,4 +3,4 @@ npm i sass ---- scss filles for styling
 npm install @material-ui/icons --- for icons
 npm i ityped  ---- for animation --- use info from npm page
 npm run build to finish
-npx serve
+npx serve 
